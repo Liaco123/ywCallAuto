@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #d9d5e0, #a584e5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-container {
+            text-align: center;
+        }
+
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+            overflow: hidden;
+            margin: auto;
+            margin-bottom: 100px;
+            /* 增加头像与按钮之间的间距 */
+            ;
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .button {
+            margin-top: 50px;
+            display: inline-block;
+            text-decoration: none;
+            background: #ff4c4c;
+            padding: 15px 30px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            animation: shake 1s infinite;
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-5px);
+            }
+
+            50% {
+
+
+
+
+
+                transform: translateX(5px);
+            }
+
+            75% {
+                transform: translateX(-5px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-container">
+        <div class="profile-picture">
+            <img src="profile-pic.jpg" alt="Profile Picture">
+        </div>
+        <a href="tel:+8618661007981" class="button">挪车请点击</a>
+    </div>
+</body>
+
+</html>
